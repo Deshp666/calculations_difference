@@ -17,7 +17,7 @@ def compute_factorials_in_processes(numbers):
 def main():
     numbers = [150000, 150001, 150002]
     start_time = time.time()
-    results = compute_factorials_in_processes(numbers)
+    compute_factorials_in_processes(numbers)
     print("Time taken:", time.time() - start_time)
 
 if __name__ == '__main__':
