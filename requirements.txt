@@ -1,0 +1,2 @@
+httpx == 1.0.0b0
+requests == 2.32.3
