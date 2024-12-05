@@ -7,7 +7,7 @@ def fetch_url(url):
     return response.text
 
 def fetch_all(urls):
-    with multiprocessing.Pool(processes=multiprocessing.cpu_count()) as pool:
+    with multiprocessing.Pool(processes=multiprocessing.cpu_count()//2) as pool:
         results = pool.map(fetch_url, urls)
     return results
 
